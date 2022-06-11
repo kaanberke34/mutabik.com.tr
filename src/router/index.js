@@ -14,9 +14,9 @@ const routes = [
     component: () => import("../views/AboutView.vue"),
   },
   {
-    path: "/location",
-    name: "location",
-    component: () => import("../views/LocationView.vue"),
+    path: "/contact",
+    name: "contact",
+    component: () => import("../views/ContactView.vue"),
   },
   {
     path: "/menu",

@@ -18,4 +18,9 @@ export default {
 };
 </script>
 <style>
+:root,
+#app {
+  background-color: #181818;
+  color: white;
+}
 </style>

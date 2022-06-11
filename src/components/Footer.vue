@@ -1,8 +1,51 @@
 <template>
-  <div>Footer</div>
+  <b-container>
+    <footer>
+      <hr />
+      <b-card class="card-bg text-center">
+        <b-card-text>
+          Adres: Küçükbakkalköy Mah. Kayişdaği Cad. No:3/1 ATAŞEHIR - ISTANBUL
+          (Marriott Hotel yani, Flora Residence altindayiz.)
+        </b-card-text>
+
+        <a href="/" class="card-link">Home</a>
+        <b-link href="/Menu" class="card-link">Menu</b-link>
+        <b-link href="/about" class="card-link">About Us</b-link>
+        <b-link href="/contact" class="card-link">Contact</b-link>
+      </b-card>
+      <b-card-footer class="card-ftr text-center">
+        <b-link href="https://www.biartibieksi.com" class="card-footer-link"
+          >biartibieksi | Web Hizmetleri © 2022</b-link
+        ></b-card-footer
+      >
+    </footer>
+  </b-container>
 </template>
 <script>
 export default {};
 </script>
 <style scoped>
+.card-bg {
+  background-color: transparent;
+  border: none;
+}
+.card-link {
+  text-decoration: none;
+  color: White;
+  padding: 5px;
+}
+.card-link:hover {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+.card-ftr {
+  background-color: transparent;
+  border: none;
+}
+.card-footer-link {
+  text-decoration: none;
+  color: White;
+  padding: 5px;
+}
 </style>
