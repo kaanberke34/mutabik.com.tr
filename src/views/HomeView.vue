@@ -1714,7 +1714,7 @@
                   <b-list-group-item class="icon-card-bg"
                     ><b-icon icon="cart" style="margin-right: 5px"></b-icon
                     ><a
-                      href="https://www.instagram.com/p/CebPyVUAjGm/"
+                      href="https://www.yemeksepeti.com/restaurant/uo6g/mutabik-restaurant"
                       style="text-decoration: none; color: black"
                       >Yemek Sepeti</a
                     >
