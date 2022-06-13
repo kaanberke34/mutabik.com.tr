@@ -8,9 +8,8 @@
           (Marriott Hotel yani, Flora Residence altindayiz.)
         </b-card-text>
 
-        <a href="#main" class="card-link">Anasayfa</a>
+        <b-link href="#about" class="card-link">Mutabık</b-link>
         <b-link href="#menu" class="card-link">Menü</b-link>
-        <b-link href="#about" class="card-link">Hakkımızda</b-link>
         <b-link href="#gallery" class="card-link">Galeri</b-link>
         <b-link href="#contact" class="card-link">İletişim</b-link>
       </b-card>

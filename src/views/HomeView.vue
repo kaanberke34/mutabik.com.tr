@@ -1279,196 +1279,216 @@
             </b-modal>
           </b-col>
           <!-- icecekler end  -->
-          <!-- biralar start -->
+          <!-- cerezler start -->
           <b-col col lg="2" md="4" sm="6">
-            <b-button class="m-2" v-b-modal.modal.modal-scrollable9
-              >BİRALAR
-            </b-button>
+            <b-button class="m-2" v-b-modal.modal.modal-scrollable18
+              >ALKOLLÜ İÇECEKLER</b-button
+            >
 
             <b-modal
-              id="modal-scrollable9"
-              title="BİRALAR
-"
+              id="modal-scrollable18"
+              title="ALKOLLÜ İÇECEKLER"
               hide-footer
             >
-              <b-list-group>
-                <b-list-group-item
-                  href="#"
-                  disabled
-                  class="flex-column align-items-start"
-                >
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="m-2">EFES MALT 50 CL</h5>
-                    <!-- <small class="text-muted">Price: ₺30 </small> -->
-                  </div>
-                </b-list-group-item>
+              <b-row class="mb-5">
+                <!-- biralar start -->
+                <b-col col lg="6" md="6" sm="12">
+                  <b-button class="m-2" v-b-modal.modal.modal-scrollable9
+                    >BİRALAR
+                  </b-button>
 
-                <b-list-group-item
-                  href="#"
-                  disabled
-                  class="flex-column align-items-start"
-                >
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="m-2">BOMONTİ FİLTRESİZ 50 CL</h5>
-                  </div>
-                </b-list-group-item>
-
-                <b-list-group-item
-                  href="#"
-                  disabled
-                  class="flex-column align-items-start"
-                >
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="m-2">TUBORG GOLD 50 CL</h5>
-                  </div>
-                </b-list-group-item>
-                <b-list-group-item
-                  href="#"
-                  disabled
-                  class="flex-column align-items-start"
-                >
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="m-2">MILLER 33 CL</h5>
-                  </div>
-                </b-list-group-item>
-              </b-list-group>
-            </b-modal>
-          </b-col>
-          <!-- biralar end  -->
-          <!-- kadeh saraplar start  -->
-          <b-col col lg="2" md="4" sm="6">
-            <b-button class="m-2" v-b-modal.modal.modal-scrollable10
-              >KADEH ŞARAPLAR
-            </b-button>
-
-            <b-modal id="modal-scrollable10" title="KADEH ŞARAPLAR" hide-footer>
-              <b-list-group>
-                <b-list-group-item
-                  href="#"
-                  disabled
-                  class="flex-column align-items-start"
-                >
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="m-2">KADEH KIRMIZI</h5>
-                    <!-- <small class="text-muted">Price: ₺30 </small> -->
-                  </div>
-                </b-list-group-item>
-
-                <b-list-group-item
-                  href="#"
-                  disabled
-                  class="flex-column align-items-start"
-                >
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="m-2">KADEH BEYAZ</h5>
-                  </div>
-                </b-list-group-item>
-
-                <b-list-group-item
-                  href="#"
-                  disabled
-                  class="flex-column align-items-start"
-                >
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="m-2">KADEH BLUSH-ROZE</h5>
-                  </div>
-                </b-list-group-item>
-              </b-list-group>
-            </b-modal>
-          </b-col>
-          <!-- kadeh saraplar end  -->
-          <!-- diger start  -->
-          <b-col col lg="2" md="4" sm="6">
-            <b-button class="m-2" v-b-modal.modal.modal-scrollable11
-              >DİĞER
-            </b-button>
-
-            <b-modal
-              id="modal-scrollable11"
-              title="DİĞER (Tek - Duble)
+                  <b-modal
+                    id="modal-scrollable9"
+                    title="BİRALAR
 "
-              hide-footer
-            >
-              <b-list-group>
-                <b-list-group-item
-                  href="#"
-                  disabled
-                  class="flex-column align-items-start"
-                >
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="m-2">KADEH RAKI</h5>
-                    <!-- <small class="text-muted">Price: ₺30 </small> -->
-                  </div>
-                </b-list-group-item>
+                    hide-footer
+                  >
+                    <b-list-group>
+                      <b-list-group-item
+                        href="#"
+                        disabled
+                        class="flex-column align-items-start"
+                      >
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="m-2">EFES MALT 50 CL</h5>
+                          <!-- <small class="text-muted">Price: ₺30 </small> -->
+                        </div>
+                      </b-list-group-item>
 
-                <b-list-group-item
-                  href="#"
-                  disabled
-                  class="flex-column align-items-start"
-                >
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="m-2">J&B WHISKY</h5>
-                  </div>
-                </b-list-group-item>
+                      <b-list-group-item
+                        href="#"
+                        disabled
+                        class="flex-column align-items-start"
+                      >
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="m-2">BOMONTİ FİLTRESİZ 50 CL</h5>
+                        </div>
+                      </b-list-group-item>
 
-                <b-list-group-item
-                  href="#"
-                  disabled
-                  class="flex-column align-items-start"
-                >
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="m-2">CHIVAS REGAL</h5>
-                  </div>
-                </b-list-group-item>
-                <b-list-group-item
-                  href="#"
-                  disabled
-                  class="flex-column align-items-start"
-                >
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="m-2">ABSOLUTE VODKA</h5>
-                  </div>
-                </b-list-group-item>
-                <b-list-group-item
-                  href="#"
-                  disabled
-                  class="flex-column align-items-start"
-                >
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="m-2">CHIVAS REGAL 12</h5>
-                  </div>
-                </b-list-group-item>
-                <b-list-group-item
-                  href="#"
-                  disabled
-                  class="flex-column align-items-start"
-                >
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="m-2">ISTANBLUE VODKA</h5>
-                  </div>
-                </b-list-group-item>
-                <b-list-group-item
-                  href="#"
-                  disabled
-                  class="flex-column align-items-start"
-                >
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="m-2">GİLBEY'S GIN</h5>
-                  </div>
-                </b-list-group-item>
-                <b-list-group-item
-                  href="#"
-                  disabled
-                  class="flex-column align-items-start"
-                >
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="m-2">GORDON GIN</h5>
-                  </div>
-                </b-list-group-item>
-              </b-list-group>
+                      <b-list-group-item
+                        href="#"
+                        disabled
+                        class="flex-column align-items-start"
+                      >
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="m-2">TUBORG GOLD 50 CL</h5>
+                        </div>
+                      </b-list-group-item>
+                      <b-list-group-item
+                        href="#"
+                        disabled
+                        class="flex-column align-items-start"
+                      >
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="m-2">MILLER 33 CL</h5>
+                        </div>
+                      </b-list-group-item>
+                    </b-list-group>
+                  </b-modal>
+                </b-col>
+                <!-- biralar end  -->
+                <!-- kadeh saraplar start  -->
+                <b-col col lg="6" md="6" sm="12">
+                  <b-button class="m-2" v-b-modal.modal.modal-scrollable10
+                    >KADEH ŞARAPLAR
+                  </b-button>
+
+                  <b-modal
+                    id="modal-scrollable10"
+                    title="KADEH ŞARAPLAR"
+                    hide-footer
+                  >
+                    <b-list-group>
+                      <b-list-group-item
+                        href="#"
+                        disabled
+                        class="flex-column align-items-start"
+                      >
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="m-2">KADEH KIRMIZI</h5>
+                          <!-- <small class="text-muted">Price: ₺30 </small> -->
+                        </div>
+                      </b-list-group-item>
+
+                      <b-list-group-item
+                        href="#"
+                        disabled
+                        class="flex-column align-items-start"
+                      >
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="m-2">KADEH BEYAZ</h5>
+                        </div>
+                      </b-list-group-item>
+
+                      <b-list-group-item
+                        href="#"
+                        disabled
+                        class="flex-column align-items-start"
+                      >
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="m-2">KADEH BLUSH-ROZE</h5>
+                        </div>
+                      </b-list-group-item>
+                    </b-list-group>
+                  </b-modal>
+                </b-col>
+                <!-- kadeh saraplar end  -->
+                <!-- diger start  -->
+                <b-col col lg="6" md="6" sm="12">
+                  <b-button class="m-2" v-b-modal.modal.modal-scrollable11
+                    >DİĞER
+                  </b-button>
+
+                  <b-modal
+                    id="modal-scrollable11"
+                    title="DİĞER (Tek - Duble)
+"
+                    hide-footer
+                  >
+                    <b-list-group>
+                      <b-list-group-item
+                        href="#"
+                        disabled
+                        class="flex-column align-items-start"
+                      >
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="m-2">KADEH RAKI</h5>
+                          <!-- <small class="text-muted">Price: ₺30 </small> -->
+                        </div>
+                      </b-list-group-item>
+
+                      <b-list-group-item
+                        href="#"
+                        disabled
+                        class="flex-column align-items-start"
+                      >
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="m-2">J&B WHISKY</h5>
+                        </div>
+                      </b-list-group-item>
+
+                      <b-list-group-item
+                        href="#"
+                        disabled
+                        class="flex-column align-items-start"
+                      >
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="m-2">CHIVAS REGAL</h5>
+                        </div>
+                      </b-list-group-item>
+                      <b-list-group-item
+                        href="#"
+                        disabled
+                        class="flex-column align-items-start"
+                      >
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="m-2">ABSOLUTE VODKA</h5>
+                        </div>
+                      </b-list-group-item>
+                      <b-list-group-item
+                        href="#"
+                        disabled
+                        class="flex-column align-items-start"
+                      >
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="m-2">CHIVAS REGAL 12</h5>
+                        </div>
+                      </b-list-group-item>
+                      <b-list-group-item
+                        href="#"
+                        disabled
+                        class="flex-column align-items-start"
+                      >
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="m-2">ISTANBLUE VODKA</h5>
+                        </div>
+                      </b-list-group-item>
+                      <b-list-group-item
+                        href="#"
+                        disabled
+                        class="flex-column align-items-start"
+                      >
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="m-2">GİLBEY'S GIN</h5>
+                        </div>
+                      </b-list-group-item>
+                      <b-list-group-item
+                        href="#"
+                        disabled
+                        class="flex-column align-items-start"
+                      >
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="m-2">GORDON GIN</h5>
+                        </div>
+                      </b-list-group-item>
+                    </b-list-group>
+                  </b-modal>
+                </b-col>
+                <!-- diger end  -->
+              </b-row>
             </b-modal>
           </b-col>
-          <!-- diger end  -->
+          <!-- cerezler end -->
         </b-row>
       </b-container>
       <!-- Ara Sicaklar -->
@@ -1689,6 +1709,14 @@
                       href="https://www.instagram.com/p/CebPyVUAjGm/"
                       style="text-decoration: none; color: black"
                       >@mutabikrestaurant</a
+                    >
+                  </b-list-group-item>
+                  <b-list-group-item class="icon-card-bg"
+                    ><b-icon icon="cart" style="margin-right: 5px"></b-icon
+                    ><a
+                      href="https://www.instagram.com/p/CebPyVUAjGm/"
+                      style="text-decoration: none; color: black"
+                      >Yemek Sepeti</a
                     >
                   </b-list-group-item>
                 </b-list-group>
