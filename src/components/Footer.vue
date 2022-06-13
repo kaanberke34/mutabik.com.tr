@@ -8,10 +8,11 @@
           (Marriott Hotel yani, Flora Residence altindayiz.)
         </b-card-text>
 
-        <a href="/" class="card-link">Home</a>
-        <b-link href="/Menu" class="card-link">Menu</b-link>
-        <b-link href="/about" class="card-link">About Us</b-link>
-        <b-link href="/contact" class="card-link">Contact</b-link>
+        <a href="#main" class="card-link">Anasayfa</a>
+        <b-link href="#menu" class="card-link">Menü</b-link>
+        <b-link href="#about" class="card-link">Hakkımızda</b-link>
+        <b-link href="#gallery" class="card-link">Galeri</b-link>
+        <b-link href="#contact" class="card-link">İletişim</b-link>
       </b-card>
       <b-card-footer class="card-ftr text-center">
         <b-link href="https://www.biartibieksi.com" class="card-footer-link"
@@ -31,11 +32,11 @@ export default {};
 }
 .card-link {
   text-decoration: none;
-  color: White;
+  color: black;
   padding: 5px;
 }
 .card-link:hover {
-  background-color: white;
+  background-color: #eee;
   border-radius: 10px;
   color: black;
 }
@@ -45,7 +46,7 @@ export default {};
 }
 .card-footer-link {
   text-decoration: none;
-  color: White;
+  color: black;
   padding: 5px;
 }
 </style>

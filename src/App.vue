@@ -20,7 +20,8 @@ export default {
 <style>
 :root,
 #app {
-  background-color: #181818;
-  color: white;
+  background-color: white;
+  color: black !important;
+  font-family: monospace;
 }
 </style>
