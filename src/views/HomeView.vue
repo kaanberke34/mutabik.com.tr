@@ -1,58 +1,11 @@
 <template>
-  <div class="home">
-    <!-- main start -->
-    <div id="main">
-      <div class="custom-video">
-        <video autoplay muted loop id="myVideo">
-          <source
-            src="https://davetver.com/assets/images/video2.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support HTML5 video.
-        </video>
-        <div class="content">
-          <h1>Kulağınızda cız bız edecek lezzetlere</h1>
-          <h2>MUTABIK MIYIZ</h2>
-        </div>
-      </div>
-
-      <!-- <div class="custom-content">
-        <div>
-          <b-card no-body class="overflow-hidden mt-5 mb-5">
-            <b-row no-gutters>
-              <b-col md="4">
-                <b-card-img
-                  src="https://davetver.com/assets/images/foto9.jpg"
-                  alt="Image"
-                  class="rounded-0"
-                ></b-card-img>
-              </b-col>
-              <b-col
-                md="8"
-                style="
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                "
-              >
-                <b-card-body title="">
-                  <b-card-text style="font-size: 25px">
-                    Dumanı üstünde tüten, önce gözleri doyuran, yedikçe yediren
-                    lezzetlerimiz deneyen herkesi hayran bırakıyor!
-                  </b-card-text>
-                </b-card-body>
-              </b-col>
-            </b-row>
-          </b-card>
-        </div>
-      </div> -->
-    </div>
-    <!-- main end -->
-
+  <div class="home" id="home">
     <!-- about us start -->
-    <div class="about" id="about">
-      <h1 class="text-center" style="color: red">MUTABIK</h1>
-      <h2 class="text-center">ET KEBAP / MEZE</h2>
+    <div class="about mt-5" id="about">
+      <div>
+        <h1 class="text-center" style="color: red">MUTABIK</h1>
+        <h2 class="text-center">ET KEBAP / MEZE</h2>
+      </div>
       <div class="mt-5">
         <b-card
           overlay
@@ -96,70 +49,798 @@
     <!-- about us end -->
     <!-- menu start -->
     <div class="menu" id="menu">
-      <h1 class="text-center">Menü</h1>
+      <h1 class="text-center h1-m-100">Menü</h1>
       <!-- Mezeler -->
-      <div>
-        <b-button v-b-modal.modal.modal-scrollable>Mezeler</b-button>
-
-        <b-modal id="modal-scrollable" title="Mezeler">
-          <b-list-group>
-            <b-list-group-item
-              href="#"
-              disabled
-              class="flex-column align-items-start"
+      <b-container fluid class="p-4 mt-5">
+        <b-row class="mb-5">
+          <b-col col lg="2" md="4" sm="6">
+            <b-button class="m-2" v-b-modal.modal.modal-scrollable1
+              >Mezeler</b-button
             >
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Haydari</h5>
-                <small class="text-muted">Price: ₺30 </small>
-              </div>
 
-              <p class="mb-1">
-                Haydari, sarimsak ve yoğurt ile birlikte belirli otlar ve
-                baharatlardan oluşan bir mezedir. Caciktan farkli olarak
-                salatalik içermemektedir. Tamamen bir meze olarak sunulur;
-                caciktan daha tuzlu, daha asidik ve daha kalin bir tutarliliğa
-                sahip olmakla birlikte, daha keskin bir şekilde iştah açicidir.
-              </p>
-            </b-list-group-item>
+            <b-modal id="modal-scrollable1" title="Mezeler" hide-footer>
+              <b-list-group>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Haydari</h5>
+                    <!-- <small class="text-muted">Price: ₺30 </small> -->
+                  </div>
 
-            <b-list-group-item
-              href="#"
-              disabled
-              class="flex-column align-items-start"
+                  <p class="m-2">
+                    Haydari, sarimsak ve yoğurt ile birlikte belirli otlar ve
+                    baharatlardan oluşan bir mezedir. Caciktan farkli olarak
+                    salatalik içermemektedir. Tamamen bir meze olarak sunulur;
+                    caciktan daha tuzlu, daha asidik ve daha kalin bir
+                    tutarliliğa sahip olmakla birlikte, daha keskin bir şekilde
+                    iştah açicidir.
+                  </p>
+                </b-list-group-item>
+
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Humus</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Humus, nohut ve tahine limon suyu, sarimsak, tuz, kimyon,
+                    kirmizi biber ve zeytinyaği eklenerek yapilan bir Orta Doğu
+                    mezesidir. Houmous ve Hummus olarak da yazilip okunur.
+                    Hummus Arapça'da nohut anlamina gelmektedir.
+                  </p>
+                </b-list-group-item>
+
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+              </b-list-group>
+            </b-modal>
+          </b-col>
+          <b-col col lg="2" md="4" sm="6">
+            <b-button class="m-2" v-b-modal.modal.modal-scrollable2
+              >Kategori1</b-button
             >
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Humus</h5>
-                <small class="text-muted">Price: ₺30 </small>
-              </div>
 
-              <p class="mb-1">
-                Humus, nohut ve tahine limon suyu, sarimsak, tuz, kimyon,
-                kirmizi biber ve zeytinyaği eklenerek yapilan bir Orta Doğu
-                mezesidir. Houmous ve Hummus olarak da yazilip okunur. Hummus
-                Arapça'da nohut anlamina gelmektedir.
-              </p>
-            </b-list-group-item>
+            <b-modal id="modal-scrollable2" title="Mezeler" hide-footer>
+              <b-list-group>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Haydari</h5>
+                    <!-- <small class="text-muted">Price: ₺30 </small> -->
+                  </div>
 
-            <b-list-group-item
-              href="#"
-              disabled
-              class="flex-column align-items-start"
+                  <p class="m-2">
+                    Haydari, sarimsak ve yoğurt ile birlikte belirli otlar ve
+                    baharatlardan oluşan bir mezedir. Caciktan farkli olarak
+                    salatalik içermemektedir. Tamamen bir meze olarak sunulur;
+                    caciktan daha tuzlu, daha asidik ve daha kalin bir
+                    tutarliliğa sahip olmakla birlikte, daha keskin bir şekilde
+                    iştah açicidir.
+                  </p>
+                </b-list-group-item>
+
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Humus</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Humus, nohut ve tahine limon suyu, sarimsak, tuz, kimyon,
+                    kirmizi biber ve zeytinyaği eklenerek yapilan bir Orta Doğu
+                    mezesidir. Houmous ve Hummus olarak da yazilip okunur.
+                    Hummus Arapça'da nohut anlamina gelmektedir.
+                  </p>
+                </b-list-group-item>
+
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+              </b-list-group>
+            </b-modal>
+          </b-col>
+          <b-col col lg="2" md="4" sm="6">
+            <b-button class="m-2" v-b-modal.modal.modal-scrollable3
+              >Kategori2</b-button
             >
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Tarator</h5>
-                <small class="text-muted">Price: ₺30 </small>
-              </div>
 
-              <p class="mb-1">
-                Tarator Osmanli mutfağinda bulunan bir çeşit mezedir. Günümüzde
-                ise Tarator, toroto ya da taratuar, bazi Balkan ülkelerinde ve
-                Kibris adasinda yapilan ve caciktan esinlenmiş, ona benzeyen
-                soğuk yemek olarak bilinir. Kibris'ta talatur olarak taninir.
-              </p>
-            </b-list-group-item>
-          </b-list-group>
-        </b-modal>
-      </div>
+            <b-modal id="modal-scrollable3" title="Mezeler" hide-footer>
+              <b-list-group>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Haydari</h5>
+                    <!-- <small class="text-muted">Price: ₺30 </small> -->
+                  </div>
+
+                  <p class="m-2">
+                    Haydari, sarimsak ve yoğurt ile birlikte belirli otlar ve
+                    baharatlardan oluşan bir mezedir. Caciktan farkli olarak
+                    salatalik içermemektedir. Tamamen bir meze olarak sunulur;
+                    caciktan daha tuzlu, daha asidik ve daha kalin bir
+                    tutarliliğa sahip olmakla birlikte, daha keskin bir şekilde
+                    iştah açicidir.
+                  </p>
+                </b-list-group-item>
+
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Humus</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Humus, nohut ve tahine limon suyu, sarimsak, tuz, kimyon,
+                    kirmizi biber ve zeytinyaği eklenerek yapilan bir Orta Doğu
+                    mezesidir. Houmous ve Hummus olarak da yazilip okunur.
+                    Hummus Arapça'da nohut anlamina gelmektedir.
+                  </p>
+                </b-list-group-item>
+
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+              </b-list-group>
+            </b-modal>
+          </b-col>
+          <b-col col lg="2" md="4" sm="6">
+            <b-button class="m-2" v-b-modal.modal.modal-scrollable4
+              >Kategori3</b-button
+            >
+
+            <b-modal id="modal-scrollable4" title="Mezeler" hide-footer>
+              <b-list-group>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Haydari</h5>
+                    <!-- <small class="text-muted">Price: ₺30 </small> -->
+                  </div>
+
+                  <p class="m-2">
+                    Haydari, sarimsak ve yoğurt ile birlikte belirli otlar ve
+                    baharatlardan oluşan bir mezedir. Caciktan farkli olarak
+                    salatalik içermemektedir. Tamamen bir meze olarak sunulur;
+                    caciktan daha tuzlu, daha asidik ve daha kalin bir
+                    tutarliliğa sahip olmakla birlikte, daha keskin bir şekilde
+                    iştah açicidir.
+                  </p>
+                </b-list-group-item>
+
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Humus</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Humus, nohut ve tahine limon suyu, sarimsak, tuz, kimyon,
+                    kirmizi biber ve zeytinyaği eklenerek yapilan bir Orta Doğu
+                    mezesidir. Houmous ve Hummus olarak da yazilip okunur.
+                    Hummus Arapça'da nohut anlamina gelmektedir.
+                  </p>
+                </b-list-group-item>
+
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+              </b-list-group>
+            </b-modal>
+          </b-col>
+          <b-col col lg="2" md="4" sm="6">
+            <b-button class="m-2" v-b-modal.modal.modal-scrollable5
+              >Kategori4</b-button
+            >
+
+            <b-modal id="modal-scrollable5" title="Mezeler" hide-footer>
+              <b-list-group>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Haydari</h5>
+                    <!-- <small class="text-muted">Price: ₺30 </small> -->
+                  </div>
+
+                  <p class="m-2">
+                    Haydari, sarimsak ve yoğurt ile birlikte belirli otlar ve
+                    baharatlardan oluşan bir mezedir. Caciktan farkli olarak
+                    salatalik içermemektedir. Tamamen bir meze olarak sunulur;
+                    caciktan daha tuzlu, daha asidik ve daha kalin bir
+                    tutarliliğa sahip olmakla birlikte, daha keskin bir şekilde
+                    iştah açicidir.
+                  </p>
+                </b-list-group-item>
+
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Humus</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Humus, nohut ve tahine limon suyu, sarimsak, tuz, kimyon,
+                    kirmizi biber ve zeytinyaği eklenerek yapilan bir Orta Doğu
+                    mezesidir. Houmous ve Hummus olarak da yazilip okunur.
+                    Hummus Arapça'da nohut anlamina gelmektedir.
+                  </p>
+                </b-list-group-item>
+
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+              </b-list-group>
+            </b-modal>
+          </b-col>
+          <b-col col lg="2" md="4" sm="6">
+            <b-button class="m-2" v-b-modal.modal.modal-scrollable6
+              >Kategori5</b-button
+            >
+
+            <b-modal id="modal-scrollable6" title="Mezeler" hide-footer>
+              <b-list-group>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Haydari</h5>
+                    <!-- <small class="text-muted">Price: ₺30 </small> -->
+                  </div>
+
+                  <p class="m-2">
+                    Haydari, sarimsak ve yoğurt ile birlikte belirli otlar ve
+                    baharatlardan oluşan bir mezedir. Caciktan farkli olarak
+                    salatalik içermemektedir. Tamamen bir meze olarak sunulur;
+                    caciktan daha tuzlu, daha asidik ve daha kalin bir
+                    tutarliliğa sahip olmakla birlikte, daha keskin bir şekilde
+                    iştah açicidir.
+                  </p>
+                </b-list-group-item>
+
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Humus</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Humus, nohut ve tahine limon suyu, sarimsak, tuz, kimyon,
+                    kirmizi biber ve zeytinyaği eklenerek yapilan bir Orta Doğu
+                    mezesidir. Houmous ve Hummus olarak da yazilip okunur.
+                    Hummus Arapça'da nohut anlamina gelmektedir.
+                  </p>
+                </b-list-group-item>
+
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+              </b-list-group>
+            </b-modal>
+          </b-col>
+
+          <b-col col lg="2" md="4" sm="6">
+            <b-button class="m-2" v-b-modal.modal.modal-scrollable7
+              >Kategori6</b-button
+            >
+
+            <b-modal id="modal-scrollable7" title="Mezeler" hide-footer>
+              <b-list-group>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Haydari</h5>
+                    <!-- <small class="text-muted">Price: ₺30 </small> -->
+                  </div>
+
+                  <p class="m-2">
+                    Haydari, sarimsak ve yoğurt ile birlikte belirli otlar ve
+                    baharatlardan oluşan bir mezedir. Caciktan farkli olarak
+                    salatalik içermemektedir. Tamamen bir meze olarak sunulur;
+                    caciktan daha tuzlu, daha asidik ve daha kalin bir
+                    tutarliliğa sahip olmakla birlikte, daha keskin bir şekilde
+                    iştah açicidir.
+                  </p>
+                </b-list-group-item>
+
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Humus</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Humus, nohut ve tahine limon suyu, sarimsak, tuz, kimyon,
+                    kirmizi biber ve zeytinyaği eklenerek yapilan bir Orta Doğu
+                    mezesidir. Houmous ve Hummus olarak da yazilip okunur.
+                    Hummus Arapça'da nohut anlamina gelmektedir.
+                  </p>
+                </b-list-group-item>
+
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+              </b-list-group>
+            </b-modal>
+          </b-col>
+
+          <b-col col lg="2" md="4" sm="6">
+            <b-button class="m-2" v-b-modal.modal.modal-scrollable8
+              >Kategori7</b-button
+            >
+
+            <b-modal id="modal-scrollable8" title="Mezeler" hide-footer>
+              <b-list-group>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Haydari</h5>
+                    <!-- <small class="text-muted">Price: ₺30 </small> -->
+                  </div>
+
+                  <p class="m-2">
+                    Haydari, sarimsak ve yoğurt ile birlikte belirli otlar ve
+                    baharatlardan oluşan bir mezedir. Caciktan farkli olarak
+                    salatalik içermemektedir. Tamamen bir meze olarak sunulur;
+                    caciktan daha tuzlu, daha asidik ve daha kalin bir
+                    tutarliliğa sahip olmakla birlikte, daha keskin bir şekilde
+                    iştah açicidir.
+                  </p>
+                </b-list-group-item>
+
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Humus</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Humus, nohut ve tahine limon suyu, sarimsak, tuz, kimyon,
+                    kirmizi biber ve zeytinyaği eklenerek yapilan bir Orta Doğu
+                    mezesidir. Houmous ve Hummus olarak da yazilip okunur.
+                    Hummus Arapça'da nohut anlamina gelmektedir.
+                  </p>
+                </b-list-group-item>
+
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+                <b-list-group-item
+                  href="#"
+                  disabled
+                  class="flex-column align-items-start"
+                >
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="m-2">Tarator</h5>
+                  </div>
+
+                  <p class="m-2">
+                    Tarator Osmanli mutfağinda bulunan bir çeşit mezedir.
+                    Günümüzde ise Tarator, toroto ya da taratuar, bazi Balkan
+                    ülkelerinde ve Kibris adasinda yapilan ve caciktan
+                    esinlenmiş, ona benzeyen soğuk yemek olarak bilinir.
+                    Kibris'ta talatur olarak taninir.
+                  </p>
+                </b-list-group-item>
+              </b-list-group>
+            </b-modal>
+          </b-col>
+        </b-row>
+      </b-container>
       <!-- Ara Sicaklar -->
       <b-list-group>
         <h2>Ara Sicaklar</h2>
@@ -170,11 +851,10 @@
           class="flex-column align-items-start"
         >
           <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">Icli Kofte</h5>
-            <small class="text-muted">Price: ₺40 </small>
+            <h5 class="m-2">Icli Kofte</h5>
           </div>
 
-          <p class="mb-1">
+          <p class="m-2">
             İçli köfte ya da oruk, bulgurun hamur haline getirilerek içinin
             doldurulmasi suretiyle yapilan Orta Doğu mutfağinda bir yemektir.
             Aslen Levant mutfağina ait olan bu yemeğe kibbe ve bazi yörelerde
@@ -189,11 +869,10 @@
           class="flex-column align-items-start"
         >
           <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">Pacanga Boregi</h5>
-            <small class="text-muted">Price: ₺45 </small>
+            <h5 class="m-2">Pacanga Boregi</h5>
           </div>
 
-          <p class="mb-1">
+          <p class="m-2">
             Paçanga böreği, yufka ile yapilan bir börek türüdür. İç malzemesi;
             kaşar peyniri, pastirma, domates, maydanoz ve biberden oluşmaktadir.
             Her bir malzeme ince ya da küçük parçalar halinde doğranir. Bu iç
@@ -212,11 +891,10 @@
           class="flex-column align-items-start"
         >
           <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">Adana Kebap</h5>
-            <small class="text-muted">Price: ₺60 </small>
+            <h5 class="m-2">Adana Kebap</h5>
           </div>
 
-          <p class="mb-1">
+          <p class="m-2">
             Adana kebabi, Adana'ya özgü, "zirh" adi verilen, satira benzer bir
             biçak ile elde kiyilan parça etten yapilan Türk mutfağinda bir kebap
             veya şiş köfte çeşidi. Adana kebabini diğer kebaplardan ayiran en
@@ -230,11 +908,10 @@
           class="flex-column align-items-start"
         >
           <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">Urfa Kebap</h5>
-            <small class="text-muted">Price: ₺55 </small>
+            <h5 class="m-2">Urfa Kebap</h5>
           </div>
 
-          <p class="mb-1">
+          <p class="m-2">
             Urfa kebap, Şanliurfa ve çevre illere özgü Türk mutfağinda kebap
             türüdür. "Kebap" ve "Urfa" kelimesi buluşarak Urfa kebap adini
             doğurmuştur. Urfa kebap acisiz, zirhta çekilmiş sade kebaba verilen
@@ -248,11 +925,10 @@
           class="flex-column align-items-start"
         >
           <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">Ali Nazik</h5>
-            <small class="text-muted">Price: ₺70 </small>
+            <h5 class="m-2">Ali Nazik</h5>
           </div>
 
-          <p class="mb-1">
+          <p class="m-2">
             Alinazik, patlican ve et ile yapilan bir ana yemektir. Türk
             mutfağina ait olup genelde Gaziantep'e mâledilir. Gaziantep
             Alenaziği /Antep Alenaziği 04.05.2021 tarihinde Türk Patent ve Marka
@@ -265,8 +941,8 @@
 
     <!-- gallery start -->
     <div class="gallery" id="gallery">
+      <h1 class="text-center h1-m-100 mt-5">Galeri</h1>
       <b-container fluid class="p-4 bg-dark mt-5">
-        <h1 class="custom-gallery">Galeri</h1>
         <b-row class="mb-5">
           <b-col class="col-xs-6">
             <b-img
@@ -392,8 +1068,8 @@
     </div>
     <!-- gallery end -->
     <!-- contact start -->
-    <div class="Contact" id="contact">
-      <h1 class="text-center m-5">İletişim</h1>
+    <div class="contact" id="contact">
+      <h1 class="text-center h1-m-100">İletişim</h1>
 
       <div>
         <b-card no-body class="overflow-hidden location-card-bg">
@@ -571,36 +1247,6 @@ b-list-group-item {
 iframe {
   border-radius: 10px;
 }
-.custom-gallery {
-  text-align: center;
-  color: white;
-}
-#myVideo {
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  max-height: 1000px;
-  z-index: 0;
-}
-.content {
-  position: absolute;
-  bottom: 0;
-  color: #f1f1f1;
-  max-width: 100%;
-}
-.about {
-  padding-top: 750px;
-  position: relative;
-}
-@media (min-aspect-ratio: 16/9) {
-  #videoBG {
-    width: 100%;
-    height: auto;
-  }
-}
 @media (min-width: 425px) {
   .rounded-0 {
     height: auto;
@@ -608,16 +1254,6 @@ iframe {
   }
 }
 @media (max-width: 425px) {
-  #myVideo {
-    max-width: 100%;
-    min-width: unset;
-  }
-  .content {
-    display: none;
-  }
-  .custom-video {
-    margin-top: 600px;
-  }
   .col {
     flex: unset;
     margin-top: 20px;
@@ -626,39 +1262,18 @@ iframe {
     margin-bottom: unset !important;
   }
 }
-@media (max-width: 768px) {
-  #myVideo {
-    max-width: 100%;
-    min-width: unset;
-  }
-  .about {
-    padding-top: 500px !important;
-  }
-
-  .content {
-    display: none;
-  }
-}
-@media (max-width: 1024px) {
-  #myVideo {
-    max-width: 100%;
-    min-width: unset;
-  }
-  .about {
-    padding-top: 700px !important;
-  }
-
-  .content {
-    display: none;
-  }
-}
 .textMiddle {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.content {
-  display: none;
+.about,
+.menu,
+.gallery,
+.contact {
+  padding-top: 70px;
+}
+.h1-m-100 {
+  margin-bottom: 70px;
 }
 </style>
