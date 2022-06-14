@@ -9,7 +9,7 @@
       <div class="mt-5">
         <b-card
           overlay
-          img-src="https://davetver.com/assets/images/front.png"
+          img-src="/assets/images/front.png"
           img-alt="Mutabik Front Image"
           text-variant="white"
           class="text-custom-red"
@@ -28,7 +28,7 @@
             <b-row no-gutters>
               <b-col md="4">
                 <b-card-img
-                  src="https://davetver.com/assets/images/foto15.jpg"
+                  src="/assets/images/foto15.jpg"
                   alt="Image"
                   class="rounded-0"
                 ></b-card-img>
@@ -54,11 +54,12 @@
       <b-container fluid class="p-4 mt-5">
         <b-row class="mb-5">
           <!-- baslangiclar start  -->
-          <b-col col lg="2" md="4" sm="6">
-            <b-button class="m-2" v-b-modal.modal.modal-scrollable1
-              >BAŞLANGIÇLAR</b-button
-            >
-
+          <b-col col lg="3" md="4" sm="6" xl="2" class="middle-card">
+            <Card
+              class="m-2"
+              v-b-modal.modal.modal-scrollable1
+              cardTitle="BAŞLANGIÇLAR"
+            />
             <b-modal id="modal-scrollable1" title="BAŞLANGIÇLAR" hide-footer>
               <b-list-group>
                 <b-list-group-item
@@ -187,10 +188,12 @@
           </b-col>
           <!-- baslangiclar end  -->
           <!-- firindan start  -->
-          <b-col col lg="2" md="4" sm="6">
-            <b-button class="m-2" v-b-modal.modal.modal-scrollable2
-              >FIRINDAN</b-button
-            >
+          <b-col col lg="3" md="4" sm="6" xl="2" class="middle-card">
+            <Card
+              class="m-2"
+              v-b-modal.modal.modal-scrollable2
+              cardTitle="FIRINDAN"
+            />
 
             <b-modal id="modal-scrollable2" title="FIRINDAN" hide-footer>
               <b-list-group>
@@ -319,10 +322,12 @@
           </b-col>
           <!-- firindan end  -->
           <!-- salatalar start  -->
-          <b-col col lg="2" md="4" sm="6">
-            <b-button class="m-2" v-b-modal.modal.modal-scrollable3
-              >SALATALAR</b-button
-            >
+          <b-col col lg="3" md="4" sm="6" xl="2" class="middle-card">
+            <Card
+              class="m-2"
+              v-b-modal.modal.modal-scrollable3
+              cardTitle="SALATALAR"
+            />
 
             <b-modal id="modal-scrollable3" title="SALATALAR" hide-footer>
               <b-list-group>
@@ -424,10 +429,12 @@
           </b-col>
           <!-- salatalar end  -->
           <!-- mezeler start  -->
-          <b-col col lg="2" md="4" sm="6">
-            <b-button class="m-2" v-b-modal.modal.modal-scrollable4
-              >MEZELER</b-button
-            >
+          <b-col col lg="3" md="4" sm="6" xl="2" class="middle-card">
+            <Card
+              class="m-2"
+              v-b-modal.modal.modal-scrollable4
+              cardTitle="MEZELER"
+            />
 
             <b-modal id="modal-scrollable4" title="MEZELER" hide-footer>
               <b-list-group>
@@ -674,10 +681,12 @@
           </b-col>
           <!-- mezeler end  -->
           <!-- kirmizi et ve kebap start -->
-          <b-col col lg="2" md="4" sm="6">
-            <b-button class="m-2" v-b-modal.modal.modal-scrollable5
-              >KIRMIZI ET & KEBAP</b-button
-            >
+          <b-col col lg="3" md="4" sm="6" xl="2" class="middle-card">
+            <Card
+              class="m-2"
+              v-b-modal.modal.modal-scrollable5
+              cardTitle="KIRMIZI ET & KEBAP"
+            />
 
             <b-modal
               id="modal-scrollable5"
@@ -1000,10 +1009,12 @@
           </b-col>
           <!-- kirmizi et ve kebap end -->
           <!-- tatlilar start -->
-          <b-col col lg="2" md="4" sm="6">
-            <b-button class="m-2" v-b-modal.modal.modal-scrollable6
-              >TATLILAR</b-button
-            >
+          <b-col col lg="3" md="4" sm="6" xl="2" class="middle-card">
+            <Card
+              class="m-2"
+              v-b-modal.modal.modal-scrollable6
+              cardTitle="TATLILAR"
+            />
 
             <b-modal id="modal-scrollable6" title="TATLILAR" hide-footer>
               <b-list-group>
@@ -1087,12 +1098,14 @@
           </b-col>
           <!-- tatlilar end -->
           <!-- cerezler start -->
-          <b-col col lg="2" md="4" sm="6">
-            <b-button class="m-2" v-b-modal.modal.modal-scrollable7
-              >ÇEREZ</b-button
-            >
+          <b-col col lg="3" md="4" sm="6" xl="2" class="middle-card">
+            <Card
+              class="m-2"
+              v-b-modal.modal.modal-scrollable7
+              cardTitle="ÇEREZLER"
+            />
 
-            <b-modal id="modal-scrollable7" title="ÇEREZ" hide-footer>
+            <b-modal id="modal-scrollable7" title="ÇEREZLER" hide-footer>
               <b-list-group>
                 <b-list-group-item
                   href="#"
@@ -1129,10 +1142,12 @@
           </b-col>
           <!-- cerezler end -->
           <!-- icecekler start -->
-          <b-col col lg="2" md="4" sm="6">
-            <b-button class="m-2" v-b-modal.modal.modal-scrollable8
-              >İÇECEKLER</b-button
-            >
+          <b-col col lg="3" md="4" sm="6" xl="2" class="middle-card">
+            <Card
+              class="m-2"
+              v-b-modal.modal.modal-scrollable8
+              cardTitle="İÇECEKLER"
+            />
 
             <b-modal id="modal-scrollable8" title="İÇECEKLER" hide-footer>
               <b-list-group>
@@ -1279,11 +1294,13 @@
             </b-modal>
           </b-col>
           <!-- icecekler end  -->
-          <!-- cerezler start -->
-          <b-col col lg="2" md="4" sm="6">
-            <b-button class="m-2" v-b-modal.modal.modal-scrollable18
-              >ALKOLLÜ İÇECEKLER</b-button
-            >
+          <!-- alkollu icecekler start -->
+          <b-col col lg="3" md="4" sm="6" xl="2" class="middle-card">
+            <Card
+              class="m-2"
+              v-b-modal.modal.modal-scrollable18
+              cardTitle="ALKOLLÜ İÇECEKLER"
+            />
 
             <b-modal
               id="modal-scrollable18"
@@ -1472,6 +1489,7 @@
                           <h5 class="m-2">GİLBEY'S GIN</h5>
                         </div>
                       </b-list-group-item>
+
                       <b-list-group-item
                         href="#"
                         disabled
@@ -1488,7 +1506,7 @@
               </b-row>
             </b-modal>
           </b-col>
-          <!-- cerezler end -->
+          <!-- alkollu icecekler end -->
         </b-row>
       </b-container>
       <!-- Ara Sicaklar -->
@@ -1543,7 +1561,7 @@
             <b-img
               thumbnail
               fluid
-              src="https://davetver.com/assets/images/foto1.jpg"
+              src="/assets/images/foto1.jpg"
               alt="Image 1"
             ></b-img>
           </b-col>
@@ -1551,7 +1569,7 @@
             <b-img
               thumbnail
               fluid
-              src="https://davetver.com/assets/images/foto2.jpg"
+              src="/assets/images/foto2.jpg"
               alt="Image 2"
             ></b-img>
           </b-col>
@@ -1559,7 +1577,7 @@
             <b-img
               thumbnail
               fluid
-              src="https://davetver.com/assets/images/foto3.jpg"
+              src="/assets/images/foto3.jpg"
               alt="Image 3"
             ></b-img>
           </b-col>
@@ -1567,7 +1585,7 @@
             <b-img
               thumbnail
               fluid
-              src="https://davetver.com/assets/images/foto4.jpg"
+              src="/assets/images/foto4.jpg"
               alt="Image 3"
             ></b-img>
           </b-col>
@@ -1576,7 +1594,7 @@
             <b-img
               thumbnail
               fluid
-              src="https://davetver.com/assets/images/foto5.jpg"
+              src="/assets/images/foto5.jpg"
               alt="Image 3"
             ></b-img>
           </b-col>
@@ -1586,7 +1604,7 @@
             <b-img
               thumbnail
               fluid
-              src="https://davetver.com/assets/images/foto6.jpg"
+              src="/assets/images/foto6.jpg"
               alt="Image 3"
             ></b-img>
           </b-col>
@@ -1594,16 +1612,7 @@
             <b-img
               thumbnail
               fluid
-              src="https://davetver.com/assets/images/foto7.jpg"
-              alt="Image 3"
-            ></b-img>
-          </b-col>
-
-          <b-col>
-            <b-img
-              thumbnail
-              fluid
-              src="https://davetver.com/assets/images/foto8.jpg"
+              src="/assets/images/foto7.jpg"
               alt="Image 3"
             ></b-img>
           </b-col>
@@ -1612,7 +1621,16 @@
             <b-img
               thumbnail
               fluid
-              src="https://davetver.com/assets/images/foto9.jpg"
+              src="/assets/images/foto8.jpg"
+              alt="Image 3"
+            ></b-img>
+          </b-col>
+
+          <b-col>
+            <b-img
+              thumbnail
+              fluid
+              src="/assets/images/foto9.jpg"
               alt="Image 3"
             ></b-img>
           </b-col>
@@ -1622,7 +1640,7 @@
             <b-img
               thumbnail
               fluid
-              src="https://davetver.com/assets/images/foto10.jpg"
+              src="/assets/images/foto10.jpg"
               alt="Image 3"
             ></b-img>
           </b-col>
@@ -1630,7 +1648,7 @@
             <b-img
               thumbnail
               fluid
-              src="https://davetver.com/assets/images/foto11.jpg"
+              src="/assets/images/foto11.jpg"
               alt="Image 3"
             ></b-img>
           </b-col>
@@ -1638,7 +1656,7 @@
             <b-img
               thumbnail
               fluid
-              src="https://davetver.com/assets/images/foto12.jpg"
+              src="/assets/images/foto12.jpg"
               alt="Image 3"
             ></b-img>
           </b-col>
@@ -1646,7 +1664,7 @@
             <b-img
               thumbnail
               fluid
-              src="https://davetver.com/assets/images/foto13.jpg"
+              src="/assets/images/foto13.jpg"
               alt="Image 3"
             ></b-img>
           </b-col>
@@ -1654,7 +1672,7 @@
             <b-img
               thumbnail
               fluid
-              src="https://davetver.com/assets/images/foto14.jpg"
+              src="/assets/images/foto14.jpg"
               alt="Image 3"
             ></b-img>
           </b-col>
@@ -1706,7 +1724,7 @@
                   <b-list-group-item class="icon-card-bg"
                     ><b-icon icon="instagram" style="margin-right: 5px"></b-icon
                     ><a
-                      href="https://www.instagram.com/p/CebPyVUAjGm/"
+                      href="https://www.instagram.com/mutabikrestaurant/"
                       style="text-decoration: none; color: black"
                       >@mutabikrestaurant</a
                     >
@@ -1814,10 +1832,10 @@
 
 <script>
 // @ is an alias to /src
-
+import Card from "@/components/Card.vue";
 export default {
   name: "HomeView",
-  components: {},
+  components: { Card },
 };
 </script>
 <style scoped>
@@ -1878,5 +1896,10 @@ iframe {
 }
 .h1-m-100 {
   margin-bottom: 70px;
+}
+.middle-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

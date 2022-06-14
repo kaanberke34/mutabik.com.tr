@@ -4,7 +4,7 @@
       <b-container>
         <b-navbar-brand href="/" class="mx-auto">
           <img
-            src="https://davetver.com/assets/images/mutabik_logo.png"
+            src="@/assets/images/logo.png"
             class="d-inline-block align-top"
             alt="logo"
             width="200px"
