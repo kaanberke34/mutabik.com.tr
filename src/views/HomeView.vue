@@ -54,7 +54,7 @@
       <b-container fluid class="p-4 mt-5">
         <b-row class="mb-5">
           <!-- baslangiclar start  -->
-          <b-col col lg="3" md="4" sm="6" xl="2" class="middle-card">
+          <b-col col lg="3" md="4" sm="6" xl="4" class="middle-card">
             <Card
               class="m-2"
               v-b-modal.modal.modal-scrollable1
@@ -188,7 +188,7 @@
           </b-col>
           <!-- baslangiclar end  -->
           <!-- firindan start  -->
-          <b-col col lg="3" md="4" sm="6" xl="2" class="middle-card">
+          <b-col col lg="3" md="4" sm="6" xl="4" class="middle-card">
             <Card
               class="m-2"
               v-b-modal.modal.modal-scrollable2
@@ -322,7 +322,7 @@
           </b-col>
           <!-- firindan end  -->
           <!-- salatalar start  -->
-          <b-col col lg="3" md="4" sm="6" xl="2" class="middle-card">
+          <b-col col lg="3" md="4" sm="6" xl="4" class="middle-card">
             <Card
               class="m-2"
               v-b-modal.modal.modal-scrollable3
@@ -429,7 +429,7 @@
           </b-col>
           <!-- salatalar end  -->
           <!-- mezeler start  -->
-          <b-col col lg="3" md="4" sm="6" xl="2" class="middle-card">
+          <b-col col lg="3" md="4" sm="6" xl="4" class="middle-card">
             <Card
               class="m-2"
               v-b-modal.modal.modal-scrollable4
@@ -681,7 +681,7 @@
           </b-col>
           <!-- mezeler end  -->
           <!-- kirmizi et ve kebap start -->
-          <b-col col lg="3" md="4" sm="6" xl="2" class="middle-card">
+          <b-col col lg="3" md="4" sm="6" xl="4" class="middle-card">
             <Card
               class="m-2"
               v-b-modal.modal.modal-scrollable5
@@ -1009,7 +1009,7 @@
           </b-col>
           <!-- kirmizi et ve kebap end -->
           <!-- tatlilar start -->
-          <b-col col lg="3" md="4" sm="6" xl="2" class="middle-card">
+          <b-col col lg="3" md="4" sm="6" xl="4" class="middle-card">
             <Card
               class="m-2"
               v-b-modal.modal.modal-scrollable6
@@ -1098,7 +1098,7 @@
           </b-col>
           <!-- tatlilar end -->
           <!-- cerezler start -->
-          <b-col col lg="3" md="4" sm="6" xl="2" class="middle-card">
+          <b-col col lg="3" md="4" sm="6" xl="4" class="middle-card">
             <Card
               class="m-2"
               v-b-modal.modal.modal-scrollable7
@@ -1142,7 +1142,7 @@
           </b-col>
           <!-- cerezler end -->
           <!-- icecekler start -->
-          <b-col col lg="3" md="4" sm="6" xl="2" class="middle-card">
+          <b-col col lg="3" md="4" sm="6" xl="4" class="middle-card">
             <Card
               class="m-2"
               v-b-modal.modal.modal-scrollable8
@@ -1295,7 +1295,7 @@
           </b-col>
           <!-- icecekler end  -->
           <!-- alkollu icecekler start -->
-          <b-col col lg="3" md="4" sm="6" xl="2" class="middle-card">
+          <b-col col lg="3" md="4" sm="6" xl="4" class="middle-card">
             <Card
               class="m-2"
               v-b-modal.modal.modal-scrollable18

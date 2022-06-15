@@ -44,6 +44,9 @@ nav {
   top: 0;
   left: 0;
   background-color: #eee;
+  border-bottom-left-radius: 50px 20px;
+
+  border-bottom-right-radius: 50px 20px;
 }
 .nav-item a {
   color: rgba(0, 0, 0, 0.55);
