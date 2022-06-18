@@ -1,0 +1,17 @@
+Options +FollowSymLinks 
+
+RewriteEngine on 
+
+RewriteCond %{HTTP_HOST} . 
+
+RewriteCond %{HTTP_HOST} !^mutabik\.com.tr
+
+RewriteRule (.*) https://mutabik.com.tr/$1 [R=301,L]
+
+#force SSL on entire site
+
+RewriteEngine On 
+
+RewriteCond %{HTTPS} !=on
+
+RewriteRule ^/?(.*) https://mutabik.com.tr/$1 [R=301,L]

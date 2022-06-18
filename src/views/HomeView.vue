@@ -1307,12 +1307,14 @@
               title="ALKOLLÜ İÇECEKLER"
               hide-footer
             >
-              <b-row class="mb-5">
+              <b-row class="mb-5 mobileCustom">
                 <!-- biralar start -->
                 <b-col col lg="6" md="6" sm="12">
-                  <b-button class="m-2" v-b-modal.modal.modal-scrollable9
-                    >BİRALAR
-                  </b-button>
+                  <Card
+                    class="m-2"
+                    v-b-modal.modal.modal-scrollable9
+                    cardTitle="BİRALAR"
+                  />
 
                   <b-modal
                     id="modal-scrollable9"
@@ -1366,10 +1368,11 @@
                 <!-- biralar end  -->
                 <!-- kadeh saraplar start  -->
                 <b-col col lg="6" md="6" sm="12">
-                  <b-button class="m-2" v-b-modal.modal.modal-scrollable10
-                    >KADEH ŞARAPLAR
-                  </b-button>
-
+                  <Card
+                    class="m-2"
+                    v-b-modal.modal.modal-scrollable10
+                    cardTitle="KADEH ŞARAPLAR"
+                  />
                   <b-modal
                     id="modal-scrollable10"
                     title="KADEH ŞARAPLAR"
@@ -1412,10 +1415,11 @@
                 <!-- kadeh saraplar end  -->
                 <!-- diger start  -->
                 <b-col col lg="6" md="6" sm="12">
-                  <b-button class="m-2" v-b-modal.modal.modal-scrollable11
-                    >DİĞER
-                  </b-button>
-
+                  <Card
+                    class="m-2"
+                    v-b-modal.modal.modal-scrollable11
+                    cardTitle="DİĞER"
+                  />
                   <b-modal
                     id="modal-scrollable11"
                     title="DİĞER (Tek - Duble)
@@ -1586,7 +1590,7 @@
               thumbnail
               fluid
               src="/assets/images/foto4.jpg"
-              alt="Image 3"
+              alt="Image 4"
             ></b-img>
           </b-col>
 
@@ -1595,7 +1599,7 @@
               thumbnail
               fluid
               src="/assets/images/foto5.jpg"
-              alt="Image 3"
+              alt="Image 5"
             ></b-img>
           </b-col>
         </b-row>
@@ -1605,7 +1609,7 @@
               thumbnail
               fluid
               src="/assets/images/foto6.jpg"
-              alt="Image 3"
+              alt="Image 6"
             ></b-img>
           </b-col>
           <b-col>
@@ -1613,7 +1617,7 @@
               thumbnail
               fluid
               src="/assets/images/foto7.jpg"
-              alt="Image 3"
+              alt="Image 7"
             ></b-img>
           </b-col>
 
@@ -1622,7 +1626,7 @@
               thumbnail
               fluid
               src="/assets/images/foto8.jpg"
-              alt="Image 3"
+              alt="Image 8"
             ></b-img>
           </b-col>
 
@@ -1631,7 +1635,7 @@
               thumbnail
               fluid
               src="/assets/images/foto9.jpg"
-              alt="Image 3"
+              alt="Image 9"
             ></b-img>
           </b-col>
         </b-row>
@@ -1641,7 +1645,7 @@
               thumbnail
               fluid
               src="/assets/images/foto10.jpg"
-              alt="Image 3"
+              alt="Image 10"
             ></b-img>
           </b-col>
           <b-col>
@@ -1649,7 +1653,7 @@
               thumbnail
               fluid
               src="/assets/images/foto11.jpg"
-              alt="Image 3"
+              alt="Image 11"
             ></b-img>
           </b-col>
           <b-col>
@@ -1657,7 +1661,7 @@
               thumbnail
               fluid
               src="/assets/images/foto12.jpg"
-              alt="Image 3"
+              alt="Image 12"
             ></b-img>
           </b-col>
           <b-col>
@@ -1665,7 +1669,7 @@
               thumbnail
               fluid
               src="/assets/images/foto13.jpg"
-              alt="Image 3"
+              alt="Image 13"
             ></b-img>
           </b-col>
           <b-col>
@@ -1673,7 +1677,7 @@
               thumbnail
               fluid
               src="/assets/images/foto14.jpg"
-              alt="Image 3"
+              alt="Image 14"
             ></b-img>
           </b-col>
         </b-row>
@@ -1882,6 +1886,10 @@ iframe {
   .row {
     margin-bottom: unset !important;
   }
+  .mobileCustom {
+    display: table;
+    margin: auto;
+  }
 }
 .textMiddle {
   display: flex;
@@ -1901,5 +1909,8 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+div [id^="vote_score"] {
+  border-radius: 1.3rem !important;
 }
 </style>
